@@ -3,16 +3,13 @@
 export XDG_CONFIG_HOME="$HOME"/.config
 mkdir -p "$XDG_CONFIG_HOME"
 
+dotfilesDir="dotfiles"
 ln -sf "$PWD/nvim" "$XDG_CONFIG_HOME"/nvim
-ln -sf "$PWD/configuration/.bash_profile" "$HOME"/.bash_profile
-ln -sf "$PWD/configuration/.tmux.conf" "$HOME"/.tmux.conf
+ln -sf "$PWD/$dotfilesDir/.bash_profile" "$HOME"/.bash_profile
+ln -sf "$PWD/$dotfilesDir/.tmux.conf" "$HOME"/.tmux.conf
 
 packages=(
-	kubectl
     npm
-    crane
-    k3d
-    helm
     docker
     tmux
     yq

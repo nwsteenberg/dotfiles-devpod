@@ -10,6 +10,8 @@ export TERM=xterm-256color
 ############# Alias
 alias vim='nvim'
 alias ll='ls -al'
+alias gs='git status'
+alias gd='git diff'
 
 # fix UTF-8 support
 alias tmux="tmux -u -2"
