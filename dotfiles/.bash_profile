@@ -7,6 +7,9 @@ export VISUAL=nvim
 export EDITOR=nvim
 export TERM=xterm-256color
 
+# Nvim Setup
+export XDG_CONFIG_HOME="$HOME/.config"
+
 ############# Alias
 alias vim='nvim'
 alias ll='ls -al'
