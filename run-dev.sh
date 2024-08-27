@@ -9,7 +9,6 @@ if [ -z "${language}" ]; then
 fi
 
 devcontainer_name=".devcontainer-${language}.json"
-
 cp -f "${SCRIPTPATH}/devcontainers/${devcontainer_name}" .
 
 # Project is always named after the the parent directory
