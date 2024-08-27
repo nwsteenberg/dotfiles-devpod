@@ -19,10 +19,10 @@ done
 # Grab other resources from git
 git clone https://github.com/nwsteenberg/nvim.git "$PWD/dotfiles/nvim"
 
-# Stow dotfiles
-stow --dir "$PWD/dotfiles" --target $HOME .
-
 # install oh-my-bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+
+# Stow dotfiles
+stow --dir "$PWD/dotfiles" --target $HOME .
 
 echo "All packages from the setup script have been installed."
