@@ -8,7 +8,6 @@ packages=(
     npm
     docker
     tmux
-    stow
 )
 
 for package in "${packages[@]}"; do
