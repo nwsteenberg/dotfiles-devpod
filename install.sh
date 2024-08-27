@@ -16,7 +16,11 @@ for package in "${packages[@]}"; do
 	/home/linuxbrew/.linuxbrew/bin/brew install "$package"
 done
 
-stow "$PWD/dotfiles" --target="$HOME"  
+# Grab other resources from git
+git clone https://github.com/nwsteenberg/nvim.git "$PWD/dotfiles/nvim"
+
+# Stow dotfiles
+stow --dir "$PWD/dotfiles" --target $HOME .
 
 # install oh-my-bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
