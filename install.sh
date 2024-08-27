@@ -38,4 +38,3 @@ stow --restow --dir "$PWD/dotfiles" --target $HOME .
 stow --restow --dir "$PWD/dotfiles/.config" --target $HOME/.config/ .
 
 echo "All packages from the setup script have been installed."
-
