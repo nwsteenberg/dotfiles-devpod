@@ -12,13 +12,10 @@ alias vim='nvim'
 alias ll='ls -al'
 alias gs='git status'
 alias gd='git diff'
+alias gf='git fetch'
 
 # fix UTF-8 support
 alias tmux="tmux -u -2"
-
-# kubectl
-alias k='kubectl'
-source <(kubectl completion bash)
 
 sed -i -e 's/OSH_THEME="font"/OSH_THEME="agnoster"/g' ~/.bashrc
 # Required for oh-my-bash
