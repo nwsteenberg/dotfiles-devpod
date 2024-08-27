@@ -3,9 +3,7 @@
 # Nvim Setup
 export XDG_CONFIG_HOME="$HOME"
 
-dotfilesDir="dotfiles"
-ln -sf "$PWD/nvim" "$XDG_CONFIG_HOME"/nvim
-
+# Brew packages to install
 packages=(
     npm
     docker
@@ -18,7 +16,7 @@ for package in "${packages[@]}"; do
 	/home/linuxbrew/.linuxbrew/bin/brew install "$package"
 done
 
-stow --dir="./dotfiles" --target="$HOME"  
+stow "$PWD/dotfiles" --target="$HOME"  
 
 # install oh-my-bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
