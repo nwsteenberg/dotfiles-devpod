@@ -20,5 +20,5 @@ alias gf='git fetch'
 # fix UTF-8 support
 alias tmux="tmux -u -2"
 
-sed -i -e 's/OSH_THEME="font"/OSH_THEME="agnoster"/g' ~/.zshrc
+sed -i -e 's/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/g' ~/.zshrc
 
