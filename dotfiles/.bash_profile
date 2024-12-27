@@ -1,5 +1,5 @@
 #
-# ~/.bash_profile
+# ~/.zprofile
 #
 
 ############# Environment Variables
@@ -20,9 +20,5 @@ alias gf='git fetch'
 # fix UTF-8 support
 alias tmux="tmux -u -2"
 
-sed -i -e 's/OSH_THEME="font"/OSH_THEME="agnoster"/g' ~/.bashrc
-# Required for oh-my-bash
-if [[ -f ~/.bashrc ]]; then
-  source ~/.bashrc
-fi
+sed -i -e 's/OSH_THEME="font"/OSH_THEME="agnoster"/g' ~/.zshrc
 
