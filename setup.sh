@@ -8,6 +8,12 @@ ensureDevpod() {
   fi
 }
 
+ensureDevcontainers() {
+  if ! test -d devcontainers; then
+    git clone https://github.com/nwsteenberg/devcontainers.git
+  fi
+}
+
 ensureDocker() {
 if ! docker ps >/dev/null; then
     echo "Docker not installed. Install it using the Docker documentation: https://docs.docker.com/engine/install/"
@@ -17,6 +23,7 @@ if ! docker ps >/dev/null; then
 
 ensureDevpod
 ensureDocker
+ensureDevcontainers
 
 echo "Everything looks good :)"
 

@@ -2,6 +2,7 @@
 
 # Nvim
 nvim_folder="$PWD/dotfiles/.config/nvim"
+mkdir -p "$PWD/dotfiles/.config"
 git clone https://github.com/nwsteenberg/nvim.git "$nvim_folder"
 
 # oh-my-bash
